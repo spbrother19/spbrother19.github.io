@@ -1,0 +1,81 @@
+#my_login {
+    font-size: 18px;
+    width: 25vw;
+    background-color: rgb(203, 203, 241);
+    text-align: center;
+}
+
+.my_article {
+    width: 1000px;
+    margin: auto;
+    background-color: rgb(219, 245, 245);
+    padding-bottom: 200px;
+}
+
+.my_center {
+    text-align: center;
+}
+
+.my_span {
+    font-size: large;
+    background-color: rgb(245, 227, 194);
+}
+
+.my_btn {
+    display: inline-block;
+    padding: 12px 35px;
+    border-radius: 50px;
+    background-color: white;
+    color: #47b2e4;
+    transition: none;
+    font-size: 16px;
+    font-weight: 500;
+    font-family: "Jost", sans-serif;
+    transition: 0.3s;
+    border: 1px solid #47b2e4;
+}
+
+.my_btn:hover {
+    background: #47b2e4;
+    color: #fff;
+}
+
+.my_search {
+    width: 100%;
+}
+
+.my_comment {
+    background-color: rgb(250, 236, 209);
+    margin-bottom: 20px;
+}
+
+.my_comment:hover {
+    margin-left: 50px;
+}
+
+.my_img {
+    width: 80px;
+    height: 80px;
+}
+
+.my_pre {
+    font-size: 20px;
+}
+
+#my_login a {
+    color: rgb(247, 100, 107);
+}
+
+#my_login div:hover {
+    background-color: rgb(241, 247, 216);
+}
+
+#my_jump {
+    background-color: rgb(211, 244, 247);
+    text-align: center;
+}
+
+.my_active {
+    background: #47b2e4;
+    color: #fff;
+}
