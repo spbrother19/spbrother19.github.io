@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>通话</title>
+    <script src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="./common.css">
+    <style>
+        #red {
+            bottom: -15vw;
+            left: 40vw;
+        }
+        
+        #time {
+            position: absolute;
+            left: 30vw;
+            top: 65vw;
+        }
+        
+        span {
+            font-size: 8vw;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="time"><span>通话中</span><span id="minute">0</span><span>:</span><span id="second">0</span></div>
+    <a href="./index.html"><button id="red"></button></a>
+    <img src="./img/talk.jpg" alt="">
+    <audio src="./sound/human.mp3" id="sound" controls="controls" hidden="true" loop></audio>
+
+    <script>
+        var sound = document.getElementById("sound");
+
+        function autoPlay(el) {
+            el.play();
+        }
+        autoPlay(sound);
+
+
+
+        var second = 0
+        var minute = 0;
+        var s = document.querySelector("#second")
+        var m = document.querySelector("#minute")
+        var t = setInterval(function() {
+            second += 1
+            if (second > 60) {
+                second = 0
+                minute += 1
+                m.innerText = minute
+            }
+            s.innerText = second
+        }, 1000)
+    </script>
+</body>
+
+</html>
